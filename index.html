@@ -8,7 +8,11 @@
 </head>
 
 <body>
+    <!--Navbar-->
     <nav>
+        <div class="menu-mobile">
+            <a href="#" onclick="showMenu()">Menu</a>
+        </div>
         <ul id="menu">
             <li><a href="#">HOME</a></li>
             <li><a href="#">GALERY</a></li>
@@ -16,7 +20,45 @@
             <li><a href="#">TENTANG</a></li>
         </ul>
     </nav>
+    <!--Navbar-->
+    <!--Box Profile-->
+    <section id="box-profile">
+        <div class="img-profile">
+            <div class="photo" style="background-image:
+        url(../Profile/assets/img/profile.jpg);"></div>
+        </div>
 
+        <div class="description">
+            <h1 id="pName">Meiman Jaya Gea</h1>
+            <p id="pRole">Front end Disigner</p>
+            <a href="#input-form" class="button bg-green" onclick="editForm()">Edit</a>
+            <a href="#" class="button border-blue">Resume</a>
+        </div>
+
+        <div class="information">
+            <div class="data">
+                <p class="field">Availability</p>
+                <p id="pAvailable" class="text-grey">Full Time</p>
+            </div>
+            <div class="data">
+                <p class="field">Location</p>
+                <p id="pLocation" class="text-grey">Yogyakarta, Indonesia</p>
+            </div>
+            <div class="data">
+                <p class="field">Age</p>
+                <p id="pAge" class="text-grey">23 Tahun</p>
+            </div>
+            <div class="data">
+                <p class="field">Years Experience</p>
+                <p id="pYears" class="text-grey">6</p>
+            </div>
+            <div class="data">
+                <p class="field">Email</p>
+                <p id="pEmail" class="text-grey">jayameiman17@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <!--Box Profile-->
 </body>
 
 </html>
