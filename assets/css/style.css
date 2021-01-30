@@ -9,6 +9,7 @@ body {
 }
 
 /*color*/
+
 .bg-green {
   background-color: #52dc90;
   color: #fff;
@@ -217,6 +218,7 @@ input {
 }
 
 /*responsive*/
+
 @media (min-width: 321px) and (max-width: 425px) {
   section#box-profile {
     width: 90%;
