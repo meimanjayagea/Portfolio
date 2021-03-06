@@ -1,16 +1,15 @@
+<!DOCTYPE html>
 <?php
 include "show-data.php";
 include "update-data.php";
-
 ?>
-<!DOCTYPE html>
 <html>
 
 <head>
     <title>Profile Page</title>
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -28,12 +27,12 @@ include "update-data.php";
 
     <section id="box-profile">
         <div class="img-profile">
-            <div class="photo" style="background-image:url(/assets/img/profile.jpg);"></div>
+            <div class="photo" style="background-image:url(assets/img/profile.jpg);"></div>
         </div>
 
         <div class="description">
-            <h1 id="pName"><?php $nama ?></h1>
-            <p id="pRole"><?php $r ?></p>
+            <h1 id="pName"><?= $name; ?></h1>
+            <p id="pRole"><?= $role; ?></p>
             <a href="#input-form" class="button bg-green" onclick="editForm()">Edit</a>
             <a href="#" class="button border-blue">Resume</a>
         </div>
@@ -41,23 +40,23 @@ include "update-data.php";
         <div class="information">
             <div class="data">
                 <p class="field">Availability</p>
-                <p id="pAvailable" class="text-grey"><?php $availability ?></p>
+                <p id="pAvailable" class="text-grey"><?= $availability; ?></p>
             </div>
             <div class="data">
                 <p class="field">Age</p>
-                <p id="pAge" class="text-grey"><?php $age ?></p>
+                <p id="pAge" class="text-grey"><?= $age; ?></p>
             </div>
             <div class="data">
                 <p class="field">Location</p>
-                <p id="pLocation" class="text-grey"><?php $location ?></p>
+                <p id="pLocation" class="text-grey"><?= $location; ?></p>
             </div>
             <div class="data">
                 <p class="field">Years Experience</p>
-                <p id="pExperience" class="text-grey"><?php $experience ?></p>
+                <p id="pExperience" class="text-grey"><?= $experience; ?></p>
             </div>
             <div class="data">
                 <p class="field">Email</p>
-                <p id="pEmail" class="text-grey"><?php $email ?></p>
+                <p id="pEmail" class="text-grey"><?= $email; ?></p>
             </div>
         </div>
     </section>
@@ -66,12 +65,12 @@ include "update-data.php";
         <form method="POST" action="<?= $_SERVER['PHP_SELF']; ?>">
             <div class="form">
                 <label>ID User</label>
-                <input id="inpIdUser" type="text" name="id_user" value="<?= $id; ?>">
+                <input id="inpIdUser" type="text" name="id_user" value="<?= $id ?>">
             </div>
 
             <div class="form">
                 <label>Nama</label>
-                <input id="inpName" type="text" name="name" placeholder="nama">
+                <input id="inpName" type="text" name="nama">
             </div>
             <div class="form">
                 <label>Role</label>
@@ -91,7 +90,7 @@ include "update-data.php";
             </div>
             <div class="form">
                 <label>Years Experience</label>
-                <input id="inpYears" type="number" name="Years" placeholder="Years Experience">
+                <input id="inpYears" type="number" name="years" placeholder="Years Experience">
             </div>
             <div class="form">
                 <label>Email</label>
