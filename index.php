@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<?php
+include "show-data.php";
+include "update-data.php";
+?>
 <html>
 
 <head>
     <title>Profile Page</title>
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -23,12 +27,12 @@
 
     <section id="box-profile">
         <div class="img-profile">
-            <div class="photo" style="background-image:url(/assets/img/profile.jpg);"></div>
+            <div class="photo" style="background-image:url(assets/img/profile.jpg);"></div>
         </div>
 
         <div class="description">
-            <h1 id="pName">Meiman Jaya Gea</h1>
-            <p id="pRole">Front end Disigner</p>
+            <h1 id="pName"><?= $name; ?></h1>
+            <p id="pRole"><?= $role; ?></p>
             <a href="#input-form" class="button bg-green" onclick="editForm()">Edit</a>
             <a href="#" class="button border-blue">Resume</a>
         </div>
@@ -36,61 +40,66 @@
         <div class="information">
             <div class="data">
                 <p class="field">Availability</p>
-                <p id="pAvailable" class="text-grey">Full Time</p>
+                <p id="pAvailable" class="text-grey"><?= $availability; ?></p>
             </div>
             <div class="data">
                 <p class="field">Age</p>
-                <p id="pAge" class="text-grey">23</p>
+                <p id="pAge" class="text-grey"><?= $age; ?></p>
             </div>
             <div class="data">
                 <p class="field">Location</p>
-                <p id="pLocation" class="text-grey">Yogyakarta, Indonesia</p>
+                <p id="pLocation" class="text-grey"><?= $location; ?></p>
             </div>
             <div class="data">
                 <p class="field">Years Experience</p>
-                <p id="pExperience" class="text-grey">6</p>
+                <p id="pExperience" class="text-grey"><?= $experience; ?></p>
             </div>
             <div class="data">
                 <p class="field">Email</p>
-                <p id="pEmail" class="text-grey">jayameiman17@gmail.com</p>
+                <p id="pEmail" class="text-grey"><?= $email; ?></p>
             </div>
         </div>
     </section>
 
     <section id="input-form">
-        <!--<form method="#" action="#">-->
-        <div class="form">
-            <label>Nama</label>
-            <input id="inpName" type="text" name="name" placeholder="nama">
-        </div>
-        <div class="form">
-            <label>Role</label>
-            <input id="inpRole" type="text" name="role" placeholder="Role">
-        </div>
-        <div class="form">
-            <label>Availability</label>
-            <input id="inpAvailable" type="text" name="availability" placeholder="Availability">
-        </div>
-        <div class="form">
-            <label>Age</label>
-            <input id="inpAge" type="number" name="age" placeholder="Age">
-        </div>
-        <div class="form">
-            <label>Location</label>
-            <input id="inpLocation" type="text" name="location" placeholder="Location">
-        </div>
-        <div class="form">
-            <label>Years Experience</label>
-            <input id="inpYears" type="number" name="Years" placeholder="Years Experience">
-        </div>
-        <div class="form">
-            <label>Email</label>
-            <input id="inpEmail" type="text" name="email" placeholder="Email">
-        </div>
-        <div class="form">
-            <input onclick="simpanForm()" type="submit" name="submit" value="SUBMIT" class="bg-blue">
-        </div>
-        <!-- </form> -->
+        <form method="POST" action="<?= $_SERVER['PHP_SELF']; ?>">
+            <div class="form">
+                <label>ID User</label>
+                <input id="inpIdUser" type="text" name="id_user" value="<?= $id ?>">
+            </div>
+
+            <div class="form">
+                <label>Nama</label>
+                <input id="inpName" type="text" name="nama">
+            </div>
+            <div class="form">
+                <label>Role</label>
+                <input id="inpRole" type="text" name="role" placeholder="Role">
+            </div>
+            <div class="form">
+                <label>Availability</label>
+                <input id="inpAvailable" type="text" name="availability" placeholder="Availability">
+            </div>
+            <div class="form">
+                <label>Age</label>
+                <input id="inpAge" type="number" name="age" placeholder="Age">
+            </div>
+            <div class="form">
+                <label>Location</label>
+                <input id="inpLocation" type="text" name="location" placeholder="Location">
+            </div>
+            <div class="form">
+                <label>Years Experience</label>
+                <input id="inpYears" type="number" name="years" placeholder="Years Experience">
+            </div>
+            <div class="form">
+                <label>Email</label>
+                <input id="inpEmail" type="text" name="email" placeholder="Email">
+            </div>
+            <div class="form">
+                <input onclick="" type="submit" name="submit" value="SUBMIT" class="bg-blue">
+            </div>
+            <!-- </form> -->
     </section>
 
     <script>
