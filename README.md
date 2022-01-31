@@ -21,6 +21,12 @@ Latihan membuat tampilan portofolio menggunakan bahasa meograman javascript, css
             position: relative;
         }
 
+        #mainitem {
+            width: 340px;
+            margin: 0 auto;
+            position: relative;
+        }
+
         body {
             font-family: "tahoma";
             font-size: 10pt;
@@ -122,6 +128,343 @@ Latihan membuat tampilan portofolio menggunakan bahasa meograman javascript, css
             </div>
         </div>
     </div>
+    <!-- format vidio mp4 -->
+    <hr />
+    <div class="container-fluid mb-3">               
+        <div class="container justify-content-between align-items-center">
+            <div class="mb-5 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 144p format MP4</p>
+                        <video id='hls1-video'>
+                            <source src='./Mp4/Perfect144pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hls1-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+            
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 240p format MP4</p>
+                        <video id='hls2-video'>
+                            <source src='./Mp4/Perfect240pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hls2-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 360p format MP4</p>
+                        <video id='hls3-video'>
+                            <source src='./Mp4/Perfect360pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hls3-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+            </div>  
+
+            <div class="mb-5 d-flex flex-wrap justify-content-between align-items-center">            
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 480p format MP4</p>
+                        <video id='hls4-video'>
+                            <source src='./Mp4/Perfect480pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hls4-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+    
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 720p format MP4</p>
+                        <video id='hls5-video'>
+                            <source src='./Mp4/Perfect720pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hls5-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 1080p format MP4</p>
+                        <video id='hls6-video'>
+                            <source src='./Mp4/Perfect1080pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hls6-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+    <!-- format vidio WebM -->
+    <hr />
+    <div class="container-fluid mb-3">               
+        <div class="container justify-content-between align-items-center">
+            <div class="mb-5 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 144p format WebM</p>
+                        <video id='hlsWebM1-video'>
+                            <source src='./Mp4/Perfect144pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsWebM1-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+            
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 240p format WebM</p>
+                        <video id='hlsWebM2-video'>
+                            <source src='./Mp4/Perfect240pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsWebM2-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 360p format WebM</p>
+                        <video id='hlsWebM3-video'>
+                            <source src='./Mp4/Perfect360pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsWebM3-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+            </div>  
+
+            <div class="mb-5 d-flex flex-wrap justify-content-between align-items-center">            
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 480p format WebM</p>
+                        <video id='hlsWebM4-video'>
+                            <source src='./Mp4/Perfect480pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsWebM4-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+    
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 720p format WebM</p>
+                        <video id='hlsWebM5-video'>
+                            <source src='./Mp4/Perfect720pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsWebM5-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 1080p format WebM</p>
+                        <video id='hlsWebM6-video'>
+                            <source src='./Mp4/Perfect1080pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsWebM6-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+    <!-- format vidio Ogg -->
+    <hr />
+    <div class="container-fluid mb-3">               
+        <div class="container justify-content-between align-items-center">
+            <div class="mb-5 d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 144p format Ogg</p>
+                        <video id='hlsOgg1-video'>
+                            <source src='./Mp4/Perfect144pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsOgg1-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+            
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 240p format Ogg</p>
+                        <video id='hlsOgg2-video'>
+                            <source src='./Mp4/Perfect240pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsOgg2-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 360p format Ogg</p>
+                        <video id='hlsOgg3-video'>
+                            <source src='./Mp4/Perfect360pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsOgg3-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+            </div>  
+
+            <div class="mb-5 d-flex flex-wrap justify-content-between align-items-center">            
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 480p format Ogg</p>
+                        <video id='hlsOgg4-video'>
+                            <source src='./Mp4/Perfect480pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsOgg4-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+    
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 720p format Ogg</p>
+                        <video id='hlsOgg5-video'>
+                            <source src='./Mp4/Perfect720pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsOgg5-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>  
+
+                <div class="col-md-3 mx-2" id="mainitem">
+                    <P> Perfect 1080p format Ogg</p>
+                        <video id='hlsOgg6-video'>
+                            <source src='./Mp4/Perfect1080pMp4.mp4' type='video/mp4' />
+                        </video>
+                        <script>
+                            fluidPlayer(
+                                'hlsOgg6-video', {
+                                    layoutControls: {
+                                        fillToContainer: true,
+                                        autoPlay: true
+                                    }
+                                }
+                            );
+                        </script>
+                </div>
+            </div>     
+        </div>
+    </div>
+    
+
     <div class="container-fluid">
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
